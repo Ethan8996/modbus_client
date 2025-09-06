@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+# 这个脚本是项目的可执行入口点。
+# 它会调用我们包中的main函数。
+
+import os
+import sys
+
+# 将项目根目录添加到Python路径中，以便能找到modbus_tool包
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from modbus_client.main import main
+
+if __name__ == '__main__':
+    main()
