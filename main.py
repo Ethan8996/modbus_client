@@ -2,7 +2,7 @@
 
 import argparse
 import sys
-from .client import ModbusClient
+from modbus_client.client import ModbusClient
 
 def main():
     """程序主函数"""
